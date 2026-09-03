@@ -10,7 +10,7 @@ Public audit record for **Stakely's** Aztec sequencer reward distributions to it
 Stakely operates Aztec sequencers and shares the rewards they collect with delegators,
 at a chosen commission rate. The per-delegator amounts are computed off-chain with the
 [`aztec-staking-payout`](https://github.com/AztecProtocol/aztec-staking-payout) tool and paid
-out **once a week** as a single Multicall3 batch.
+out **once a week** as a single batched transaction.
 
 This repository is the **public audit trail** for those payouts. After each weekly settlement,
 the tool's output is committed under [`runs/`](./runs) so delegators — and any third party — can
@@ -48,14 +48,15 @@ Everything needed to re-derive a payout is in the audit JSON:
    the per-delegator breakdown.
 2. Pick any row in `attributedCheckpoints[]` and look up its `txHash` on a block explorer. The
    `propose()` calldata's signature recovers to that row's `attester`, confirming Stakely
-   actually proposed that checkpoint.
+   actually proposed that checkpoint. Only checkpoints whose `header.coinbase` equals the
+   distribution wallet are counted (`counted: true`), which is what ties the reward to Stakely.
 3. Sum the proposals per delegator, apply the published commission, and compare to `transfers[]`.
    The numbers must match exactly.
 4. Re-run the tool with the published config and the same pinned `--from-epoch`/`--to-epoch`. For
    a fixed epoch window the result is deterministic — you should get byte-identical numbers.
 
 The accuracy guarantees (epoch-aligned windows, L1-finalization gate, protocol-derived reward,
-all-or-nothing proposer recovery, full determinism) are documented in the
+coinbase-gated attribution, all-or-nothing proposer recovery, full determinism) are documented in the
 [tool repository](https://github.com/AztecProtocol/aztec-staking-payout).
 
 ## Operator details
