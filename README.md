@@ -59,6 +59,21 @@ The accuracy guarantees (epoch-aligned windows, L1-finalization gate, protocol-d
 coinbase-gated attribution, all-or-nothing proposer recovery, full determinism) are documented in the
 [tool repository](https://github.com/AztecProtocol/aztec-staking-payout).
 
+## Superseded records
+
+This repository is **append-only**: audit records are never rewritten or deleted. Occasionally a
+settlement is computed and its audit record committed here, but the payout is **never proposed or
+executed** — so no on-chain payment corresponds to it. This happens when a run fails *after* writing
+the audit record but *before* the Safe transaction is created; the epochs it covers are then paid by
+a later run instead.
+
+Executed payouts are distinguishable from superseded records **on-chain**: an executed payout has a
+matching Safe transaction from the distribution wallet, a superseded record has none.
+
+| Superseded record | Superseded by | Reason |
+|---|---|---|
+| `runs/epoch-2327-2588-mtr0i9ea-a8ea72.json` | `runs/epoch-2327-2591-mtr4dib6-e1dc56.json` — Safe transaction **nonce 12** | The run of 2026-09-07 failed at the publish step (the push to this repo was rejected after a manual edit had diverged `main`), which happens **before** any Safe transaction is created. No payment was ever made for this record. Epochs 2327–2588 are fully contained in, and paid by, the superseding `2327–2591` payout. |
+
 ## Operator details
 
 | | |
