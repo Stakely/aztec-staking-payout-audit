@@ -1,0 +1,333 @@
+{
+  "kind": "true-up",
+  "runId": "mvur9ih9-157a83",
+  "createdAt": "2026-10-30T09:15:49.302Z",
+  "rollup": "0x91fF8bbD8Ebb07893010D50A48A1609e5EBd8E34",
+  "chainId": 1,
+  "token": "0xA27EC0006e59f245217Ff08CD52A7E8b169E62D2",
+  "distributionWallet": "0x81aaE63201F78b0B0bC3225BC302bd4260246a58",
+  "commissionBps": 2500,
+  "dustThreshold": "1",
+  "fromEpoch": 545,
+  "toEpoch": 4425,
+  "calculationVersion": 2,
+  "utilityCommit": "f2b3666a46db95909158d28c206278bd5f665149",
+  "method": "Para cada ventana pagada: debido = utilidad oficial (calculationVersion 2) sobre los mismos limites de epochs; pagado = transfers on-chain de la tx del Safe que ejecuto su batch. Diferencia por destinatario; se pagan las positivas.",
+  "windows": [
+    {
+      "fromEpoch": 545,
+      "toEpoch": 1049,
+      "paidAudit": "epoch-545-1049-ms4dah8k-5c4ec3.json",
+      "executionTx": "0xf767020450b00e4d6811d0e289bf4b017e52fe9df31b7b0c7cc1cce18d2ec803",
+      "executionBlock": "25630050",
+      "paid": "18900000000000000000000",
+      "recomputedAudit": "trueup-mvur9ih9-157a83/epoch-545-1049.json",
+      "fromBlock": "25428902",
+      "toBlock": "25629735",
+      "rewardEarned": "25201873742628323413722",
+      "owed": "18901405306971242560291"
+    },
+    {
+      "fromEpoch": 1050,
+      "toEpoch": 1276,
+      "paidAudit": "epoch-1050-1276-msd035g9-d749d8.json",
+      "executionTx": "0x0449183efa134dcb3a63f0869567ab8af85f54c0730eb39899f4e1fcc18614dc",
+      "executionBlock": "25675202",
+      "paid": "6562500000000000000000",
+      "recomputedAudit": "trueup-mvur9ih9-157a83/epoch-1050-1276.json",
+      "fromBlock": "25629735",
+      "toBlock": "25673174",
+      "rewardEarned": "8750000000000000000000",
+      "owed": "6562500000000000000000"
+    },
+    {
+      "fromEpoch": 1277,
+      "toEpoch": 1538,
+      "paidAudit": "epoch-1277-1538-msn06e2o-97d0e7.json",
+      "executionTx": "0xc9ccf2e23ddd89bd57fd7d7c8617d7eeb9742a198a75284012485671ba3cc99c",
+      "executionBlock": "25724012",
+      "paid": "9187500000000000000000",
+      "recomputedAudit": "trueup-mvur9ih9-157a83/epoch-1277-1538.json",
+      "fromBlock": "25673174",
+      "toBlock": "25723301",
+      "rewardEarned": "12255723927866295368498",
+      "owed": "9191792945899721526373"
+    },
+    {
+      "fromEpoch": 1539,
+      "toEpoch": 1802,
+      "paidAudit": "epoch-1539-1802-msx09bf0-d829ed.json",
+      "executionTx": "0xc136c2755cecd69a22bafdce433177992e9f5a48940eec374f712451f9dd8c94",
+      "executionBlock": "25775606",
+      "paid": "12075000000000000000000",
+      "recomputedAudit": "trueup-mvur9ih9-157a83/epoch-1539-1802.json",
+      "fromBlock": "25723301",
+      "toBlock": "25773793",
+      "rewardEarned": "16455929749869384999625",
+      "owed": "12341947312402038749717"
+    },
+    {
+      "fromEpoch": 1803,
+      "toEpoch": 2063,
+      "paidAudit": "epoch-1803-2063-mt70cbju-9a819d.json",
+      "executionTx": "0xf3708ef909d4a76daa84aa406e25590165efc46df48da22f5296e96bc455f039",
+      "executionBlock": "25825763",
+      "paid": "10237500000000000000000",
+      "recomputedAudit": "trueup-mvur9ih9-157a83/epoch-1803-2063.json",
+      "fromBlock": "25773793",
+      "toBlock": "25823738",
+      "rewardEarned": "13650080283183394563500",
+      "owed": "10237560212387545922625"
+    },
+    {
+      "fromEpoch": 2064,
+      "toEpoch": 2326,
+      "paidAudit": "epoch-2064-2326-mth0f9g8-26c9ae.json",
+      "executionTx": "0xb78b4316e343722011a71e95e557d6b3e6ed050b72e5b965dbc7407a6d7695e3",
+      "executionBlock": "25874331",
+      "paid": "10762500000000000000000",
+      "recomputedAudit": "trueup-mvur9ih9-157a83/epoch-2064-2326.json",
+      "fromBlock": "25823738",
+      "toBlock": "25874065",
+      "rewardEarned": "14350000000000000000000",
+      "owed": "10762500000000000000000"
+    },
+    {
+      "fromEpoch": 2327,
+      "toEpoch": 2591,
+      "paidAudit": "epoch-2327-2591-mtr4dib6-e1dc56.json",
+      "executionTx": "0xc1717471bc341f35285c9016e291f62af41ecaddb8d7a268652db5be6f479b1c",
+      "executionBlock": "25925589",
+      "paid": "5512500000000000000000",
+      "recomputedAudit": "trueup-mvur9ih9-157a83/epoch-2327-2591.json",
+      "fromBlock": "25874065",
+      "toBlock": "25924763",
+      "rewardEarned": "7350000000000000000000",
+      "owed": "5512500000000000000000"
+    },
+    {
+      "fromEpoch": 2592,
+      "toEpoch": 2851,
+      "paidAudit": "epoch-2592-2851-mu10l5p1-9e2a6b.json",
+      "executionTx": "0xbcf517c5ef69cd0d3f02e357052935719e42d285215f6a312df7aaba8e694c87",
+      "executionBlock": "25975160",
+      "paid": "8400000000000000000000",
+      "recomputedAudit": "trueup-mvur9ih9-157a83/epoch-2592-2851.json",
+      "fromBlock": "25924763",
+      "toBlock": "25974498",
+      "rewardEarned": "11200080957833318558634",
+      "owed": "8400060718374988918975"
+    },
+    {
+      "fromEpoch": 2852,
+      "toEpoch": 3114,
+      "paidAudit": "epoch-2852-3114-mub0o8e5-128458.json",
+      "executionTx": "0x8906d242ebb9fa382cc6c45f974149cc038af6df78295541172a2912fb1883e7",
+      "executionBlock": "26025067",
+      "paid": "9187500000000000000000",
+      "recomputedAudit": "trueup-mvur9ih9-157a83/epoch-2852-3114.json",
+      "fromBlock": "25974498",
+      "toBlock": "26024789",
+      "rewardEarned": "12623894611938177341252",
+      "owed": "9467920958953633005939"
+    },
+    {
+      "fromEpoch": 3115,
+      "toEpoch": 3376,
+      "paidAudit": "epoch-3115-3376-mul0r1hi-ba438d.json",
+      "executionTx": "0x75af19fac1795743cd20945f35b1ca79f9a7ac349f6953700b196db9aa410844",
+      "executionBlock": "26076532",
+      "paid": "13125000000000000000000",
+      "recomputedAudit": "trueup-mvur9ih9-157a83/epoch-3115-3376.json",
+      "fromBlock": "26024789",
+      "toBlock": "26074753",
+      "rewardEarned": "17500000000000000000000",
+      "owed": "13125000000000000000000"
+    },
+    {
+      "fromEpoch": 3377,
+      "toEpoch": 3639,
+      "paidAudit": "epoch-3377-3639-muv0u0co-20cb1a.json",
+      "executionTx": "0xe34ba926a477020645ea016cd96be58d29844b3d8d2f28bb13adb021a9e4aeb1",
+      "executionBlock": "26127942",
+      "paid": "10500000000000000000000",
+      "recomputedAudit": "trueup-mvur9ih9-157a83/epoch-3377-3639.json",
+      "fromBlock": "26074753",
+      "toBlock": "26125066",
+      "rewardEarned": "14059981574613322083637",
+      "owed": "10544986180959991562727"
+    },
+    {
+      "fromEpoch": 3640,
+      "toEpoch": 3901,
+      "paidAudit": "epoch-3640-3901-mv50x0vf-07b019.json",
+      "executionTx": "0x6781d6a9ddfbbc31fe467c58bcbb9ce5b87003eeb0e0f0fb75324aac23d84c57",
+      "executionBlock": "26181854",
+      "paid": "8925000000000000000000",
+      "recomputedAudit": "trueup-mvur9ih9-157a83/epoch-3640-3901.json",
+      "fromBlock": "26125066",
+      "toBlock": "26175188",
+      "rewardEarned": "11905349007319365004279",
+      "owed": "8929011755489523753209"
+    },
+    {
+      "fromEpoch": 3902,
+      "toEpoch": 4163,
+      "paidAudit": "epoch-3902-4163-mvf1041b-fb7d26.json",
+      "executionTx": "0xb017ca4ade7a3e9f4ffce2f4e9d12e366e901b8485e80c6f66c99c1d5bf926d9",
+      "executionBlock": "26225830",
+      "paid": "11025000000000000000000",
+      "recomputedAudit": "trueup-mvur9ih9-157a83/epoch-3902-4163.json",
+      "fromBlock": "26175188",
+      "toBlock": "26225325",
+      "rewardEarned": "14700802329171420565664",
+      "owed": "11025601746878565424248"
+    },
+    {
+      "fromEpoch": 4164,
+      "toEpoch": 4425,
+      "paidAudit": "epoch-4164-4425-mvuosiv8-bfb67f.json",
+      "executionTx": "0x7fa6acd3076a2807cb88c14339373616f39056390d6d144aa99c8b6ddd07bed2",
+      "executionBlock": "26304294",
+      "paid": "11551276766854784693545",
+      "recomputedAudit": "trueup-mvur9ih9-157a83/epoch-4164-4425.json",
+      "fromBlock": "26225325",
+      "toBlock": "26275468",
+      "rewardEarned": "15401702355806379591394",
+      "owed": "11551276766854784693545"
+    }
+  ],
+  "supersededAudits": [
+    "epoch-2327-2588-mtr0i9ea-a8ea72.json"
+  ],
+  "previousTrueUps": [],
+  "accrual": {
+    "fromBlock": "25428902",
+    "toBlock": "26275468",
+    "measured": "195405418540229381490205",
+    "rewardEarnedSum": "195405418540229381490205",
+    "beforeFirstWindow": "0",
+    "afterLastWindow": {
+      "toBlock": "26304603",
+      "measured": "0"
+    }
+  },
+  "recipients": [
+    {
+      "recipient": "0x1B312Cc76b59a12d3223b26d6DFd72b89B506caE",
+      "owed": "6300036282483159128733",
+      "paid": "6300000000000000000000",
+      "delta": "36282483159128733"
+    },
+    {
+      "recipient": "0x6A359f3c79a6b6fCB9c948ab16F38A4945e40d1F",
+      "owed": "6826010353194474333840",
+      "paid": "6825000000000000000000",
+      "delta": "1010353194474333840"
+    },
+    {
+      "recipient": "0x75Ce9d9C53f08B96D88f8FD6494d0B664be16878",
+      "owed": "49943583803113409462763",
+      "paid": "49351107915200882121852",
+      "delta": "592475887912527340911"
+    },
+    {
+      "recipient": "0xAc3E2B760232A413171D539C78008Cdb7C18ab52",
+      "owed": "10764683989393641043335",
+      "paid": "10762507107145124712225",
+      "delta": "2176882248516331110"
+    },
+    {
+      "recipient": "0xBA30C3d22B1a412035B99e510111e517DB802300",
+      "owed": "9450601967518168634626",
+      "paid": "9450061100661465015816",
+      "delta": "540866856703618810"
+    },
+    {
+      "recipient": "0xeaaD9810de4579BA91b1ED5023BccbE988569A76",
+      "owed": "13650473779484057370233",
+      "paid": "13650000000000000000000",
+      "delta": "473779484057370233"
+    },
+    {
+      "recipient": "0xFd660518dC1b52d9F67FAcd42bbBA962B06b8E54",
+      "owed": "49618673729985126144119",
+      "paid": "49612600643847312843652",
+      "delta": "6073086137813300467"
+    }
+  ],
+  "overpaid": [],
+  "belowDust": [],
+  "totals": {
+    "owed": "146554063905172036117649",
+    "paid": "145951276766854784693545",
+    "totalForwarded": "602787138317251424104"
+  },
+  "transfers": [
+    {
+      "delegator": "0x1B312Cc76b59a12d3223b26d6DFd72b89B506caE",
+      "amount": "36282483159128733"
+    },
+    {
+      "delegator": "0x6A359f3c79a6b6fCB9c948ab16F38A4945e40d1F",
+      "amount": "1010353194474333840"
+    },
+    {
+      "delegator": "0x75Ce9d9C53f08B96D88f8FD6494d0B664be16878",
+      "amount": "592475887912527340911"
+    },
+    {
+      "delegator": "0xAc3E2B760232A413171D539C78008Cdb7C18ab52",
+      "amount": "2176882248516331110"
+    },
+    {
+      "delegator": "0xBA30C3d22B1a412035B99e510111e517DB802300",
+      "amount": "540866856703618810"
+    },
+    {
+      "delegator": "0xeaaD9810de4579BA91b1ED5023BccbE988569A76",
+      "amount": "473779484057370233"
+    },
+    {
+      "delegator": "0xFd660518dC1b52d9F67FAcd42bbBA962B06b8E54",
+      "amount": "6073086137813300467"
+    }
+  ],
+  "transactions": [
+    {
+      "to": "0xA27EC0006e59f245217Ff08CD52A7E8b169E62D2",
+      "value": "0",
+      "data": "0xa9059cbb0000000000000000000000001b312cc76b59a12d3223b26d6dfd72b89b506cae0000000000000000000000000000000000000000000000000080e6b9e844da9d"
+    },
+    {
+      "to": "0xA27EC0006e59f245217Ff08CD52A7E8b169E62D2",
+      "value": "0",
+      "data": "0xa9059cbb0000000000000000000000006a359f3c79a6b6fcb9c948ab16f38a4945e40d1f0000000000000000000000000000000000000000000000000e057ee09652e690"
+    },
+    {
+      "to": "0xA27EC0006e59f245217Ff08CD52A7E8b169E62D2",
+      "value": "0",
+      "data": "0xa9059cbb00000000000000000000000075ce9d9c53f08b96d88f8fd6494d0b664be168780000000000000000000000000000000000000000000000201e4130fc1258256f"
+    },
+    {
+      "to": "0xA27EC0006e59f245217Ff08CD52A7E8b169E62D2",
+      "value": "0",
+      "data": "0xa9059cbb000000000000000000000000ac3e2b760232a413171d539c78008cdb7c18ab520000000000000000000000000000000000000000000000001e35d6df14ab6666"
+    },
+    {
+      "to": "0xA27EC0006e59f245217Ff08CD52A7E8b169E62D2",
+      "value": "0",
+      "data": "0xa9059cbb000000000000000000000000ba30c3d22b1a412035b99e510111e517db80230000000000000000000000000000000000000000000000000007818b8a6099eefa"
+    },
+    {
+      "to": "0xA27EC0006e59f245217Ff08CD52A7E8b169E62D2",
+      "value": "0",
+      "data": "0xa9059cbb000000000000000000000000eaad9810de4579ba91b1ed5023bccbe988569a76000000000000000000000000000000000000000000000000069333ee391b7e79"
+    },
+    {
+      "to": "0xA27EC0006e59f245217Ff08CD52A7E8b169E62D2",
+      "value": "0",
+      "data": "0xa9059cbb000000000000000000000000fd660518dc1b52d9f67facd42bbba962b06b8e540000000000000000000000000000000000000000000000005447efaa6eb5f4f3"
+    }
+  ]
+}
